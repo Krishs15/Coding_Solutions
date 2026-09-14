@@ -1,4 +1,4 @@
-# Input and Output
+# Basic Data Types
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -60,22 +60,19 @@ Print each element on a new line in the same order it was received as input. Not
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T10:27:35.954Z  
+**Submitted:** 2026-09-14T11:16:47.367Z  
 
 ```cpp
-#include <cmath>
-#include <cstdio>
-#include <vector>
 #include <iostream>
-#include <algorithm>
+#include <cstdio>
 using namespace std;
 
-
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
-    int a,b,c;
-    cin >> a >> b >> c;
-    cout<< a+b+c << endl;
+    // Complete the code.
+    int n; long l; char ch; float f; double d;
+    scanf("%d %ld %c %f %lf",&n,&l,&ch,&f,&d);
+    printf("%d\n%ld\n%c\n%f\n%lf\n",n,l,ch,f,d);
+
     return 0;
 }
 
