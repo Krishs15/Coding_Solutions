@@ -60,7 +60,7 @@ Print each element on a new line in the same order it was received as input. Not
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T11:16:47.367Z  
+**Submitted:** 2026-09-14T11:17:37.100Z  
 
 ```cpp
 #include <iostream>
