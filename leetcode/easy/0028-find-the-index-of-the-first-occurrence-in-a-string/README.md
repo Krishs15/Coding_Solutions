@@ -37,17 +37,17 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 3 ms (beats 8.66%)  
-**Memory:** 42.7 MB (beats 91.45%)  
-**Submitted:** 2026-09-16T11:33:15.890Z  
+**Runtime:** 2 ms (beats 14.01%)  
+**Memory:** 43.1 MB (beats 51.87%)  
+**Submitted:** 2026-09-16T11:34:42.937Z  
 
 ```java
 class Solution {
     public int strStr(String haystack, String needle) {
         int n=haystack.length(),m=needle.length();
-        int [] lps= new int[n];
+        int [] lps= new int[m];
         int l=0,i=1;
-        
+
         if(m==0 || m>n)
         return -1;
 
