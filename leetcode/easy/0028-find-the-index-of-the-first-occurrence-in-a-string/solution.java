@@ -1,9 +1,9 @@
 class Solution {
     public int strStr(String haystack, String needle) {
         int n=haystack.length(),m=needle.length();
-        int [] lps= new int[n];
+        int [] lps= new int[m];
         int l=0,i=1;
-        
+
         if(m==0 || m>n)
         return -1;
 
