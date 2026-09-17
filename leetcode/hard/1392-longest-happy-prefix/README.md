@@ -38,9 +38,9 @@ Explanation: "abab" is the largest prefix which is also suffix. They can overlap
 ## Solution
 
 **Language:** Java  
-**Runtime:** 809 ms (beats 5.21%)  
-**Memory:** 53.7 MB (beats 5.66%)  
-**Submitted:** 2026-09-17T03:58:14.288Z  
+**Runtime:** 782 ms (beats 5.21%)  
+**Memory:** 53 MB (beats 5.66%)  
+**Submitted:** 2026-09-17T03:58:27.499Z  
 
 ```java
 class Solution {
