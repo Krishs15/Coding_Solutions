@@ -36,7 +36,7 @@ s1 = "ForGeeksGeeks"
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-18T04:24:10.719Z  
+**Submitted:** 2026-09-18T04:25:48.488Z  
 
 ```java
 // class Solution {
@@ -93,7 +93,7 @@ class Solution {
             return -1;
         }
         
-        int res=0,i=l1-1,j=l2-1;
+        int c=0,i=l1-1,j=l2-1;
         while(i>=0)
         {
             if(s1.charAt(i)==s2.charAt(j))
@@ -102,10 +102,10 @@ class Solution {
             }
             else
             {
-                res++;i--;
+                c++;i--;
             }
         }
-        return res;
+        return c;
     }
 }
 ```
