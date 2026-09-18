@@ -52,7 +52,7 @@ class Solution {
             return -1;
         }
         
-        int res=0,i=l1-1,j=l2-1;
+        int c=0,i=l1-1,j=l2-1;
         while(i>=0)
         {
             if(s1.charAt(i)==s2.charAt(j))
@@ -61,9 +61,9 @@ class Solution {
             }
             else
             {
-                res++;i--;
+                c++;i--;
             }
         }
-        return res;
+        return c;
     }
 }
