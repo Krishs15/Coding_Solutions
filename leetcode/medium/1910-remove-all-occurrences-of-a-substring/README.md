@@ -52,9 +52,9 @@ Now s has no occurrences of "xy".
 ## Solution
 
 **Language:** Java  
-**Runtime:** 7 ms (beats 24.98%)  
-**Memory:** 44.3 MB (beats 52.27%)  
-**Submitted:** 2026-09-17T04:42:31.269Z  
+**Runtime:** 7 ms (beats 24.35%)  
+**Memory:** 44.5 MB (beats 40.28%)  
+**Submitted:** 2026-09-22T10:10:02.111Z  
 
 ```java
 class Solution {
