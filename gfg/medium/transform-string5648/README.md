@@ -36,7 +36,7 @@ s1 = "ForGeeksGeeks"
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-18T04:25:48.488Z  
+**Submitted:** 2026-09-22T10:10:56.599Z  
 
 ```java
 // class Solution {
