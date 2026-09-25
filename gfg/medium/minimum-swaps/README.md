@@ -32,7 +32,7 @@ Explanation: Input array is already sorted.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-25T04:25:41.216Z  
+**Submitted:** 2026-09-25T18:26:46.133Z  
 
 ```java
 class Solution {
