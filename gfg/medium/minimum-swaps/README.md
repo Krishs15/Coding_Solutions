@@ -32,7 +32,7 @@ Explanation: Input array is already sorted.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-25T04:19:37.027Z  
+**Submitted:** 2026-09-25T04:25:41.216Z  
 
 ```java
 class Solution {
@@ -42,11 +42,12 @@ class Solution {
         int i,count=0;
         int temp[]=arr.clone();
         Arrays.sort(temp);
+        
         HashMap<Integer,Integer> map=new HashMap<>();
+        
         for(i=0;i<n;i++)
-        {
             map.put(arr[i],i);
-        }
+            
         for(i=0;i<n;i++)
         {
             if(arr[i]!=temp[i])
