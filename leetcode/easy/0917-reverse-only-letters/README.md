@@ -48,29 +48,31 @@ Output: "Qedo1ct-eeLg=ntse-T!"
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 42.2 MB (beats 98.26%)  
-**Submitted:** 2026-10-21T10:47:03.190Z  
+**Runtime:** 1 ms (beats 25.64%)  
+**Memory:** 42.6 MB (beats 86.28%)  
+**Submitted:** 2026-10-21T11:13:05.167Z  
 
 ```java
 class Solution {
     public String reverseOnlyLetters(String s) {
-        char[] arr = s.toCharArray();
-        int left = 0, right = arr.length - 1;
-        while (left < right) {
-            if (!Character.isLetter(arr[left])) {
-                left++;
-            } else if (!Character.isLetter(arr[right])) {
-                right--;
-            } else {
-                char temp = arr[left];
-                arr[left] = arr[right];
-                arr[right] = temp;
-                left++;
-                right--;
+        char[] st = s.toCharArray();
+        char[] rev = new char[s.length()];     
+        for (int i = 0; i < s.length(); i++) {
+            if ((st[i] < 'a' || st[i] > 'z') && (st[i] < 'A' || st[i] > 'Z')) {
+                rev[i] = st[i];
             }
         }
-        return new String(arr);
+        int j = 0;
+        for (int i = s.length() - 1; i >= 0; i--) {
+            if ((st[i] >= 'a' && st[i] <= 'z') || (st[i] >= 'A' && st[i] <= 'Z')) {
+                while (rev[j] != '\0') {
+                    j++;
+                }
+                rev[j] = st[i];
+            }
+        }
+        
+        return new String(rev);
     }
 }
 ```
