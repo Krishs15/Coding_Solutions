@@ -48,9 +48,9 @@ Output: "Qedo1ct-eeLg=ntse-T!"
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 25.64%)  
-**Memory:** 42.6 MB (beats 86.28%)  
-**Submitted:** 2026-10-21T11:13:05.167Z  
+**Runtime:** 1 ms (beats 25.63%)  
+**Memory:** 42.6 MB (beats 86.06%)  
+**Submitted:** 2026-10-22T03:38:49.723Z  
 
 ```java
 class Solution {
