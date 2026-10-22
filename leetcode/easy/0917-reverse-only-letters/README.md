@@ -48,31 +48,51 @@ Output: "Qedo1ct-eeLg=ntse-T!"
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 25.63%)  
-**Memory:** 42.6 MB (beats 86.06%)  
-**Submitted:** 2026-10-22T03:38:49.723Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 41.9 MB (beats 99.85%)  
+**Submitted:** 2026-10-22T03:52:59.824Z  
 
 ```java
+// class Solution {
+//     public String reverseOnlyLetters(String s) {
+//         char[] st = s.toCharArray();
+//         char[] rev = new char[s.length()];     
+//         for (int i = 0; i < s.length(); i++) {
+//             if ((st[i] < 'a' || st[i] > 'z') && (st[i] < 'A' || st[i] > 'Z')) {
+//                 rev[i] = st[i];
+//             }
+//         }
+//         int j = 0;
+//         for (int i = s.length() - 1; i >= 0; i--) {
+//             if ((st[i] >= 'a' && st[i] <= 'z') || (st[i] >= 'A' && st[i] <= 'Z')) {
+//                 while (rev[j] != '\0') {
+//                     j++;
+//                 }
+//                 rev[j] = st[i];
+//             }
+//         }
+
+//         return new String(rev);
+//     }
+// }
 class Solution {
     public String reverseOnlyLetters(String s) {
-        char[] st = s.toCharArray();
-        char[] rev = new char[s.length()];     
-        for (int i = 0; i < s.length(); i++) {
-            if ((st[i] < 'a' || st[i] > 'z') && (st[i] < 'A' || st[i] > 'Z')) {
-                rev[i] = st[i];
+        char[] arr = s.toCharArray();
+        int left = 0, right = arr.length - 1;
+        while (left < right) {
+            if (!Character.isLetter(arr[left])) {
+                left++;
+            } else if (!Character.isLetter(arr[right])) {
+                right--;
+            } else {
+                char temp = arr[left];
+                arr[left] = arr[right];
+                arr[right] = temp;
+                left++;
+                right--;
             }
         }
-        int j = 0;
-        for (int i = s.length() - 1; i >= 0; i--) {
-            if ((st[i] >= 'a' && st[i] <= 'z') || (st[i] >= 'A' && st[i] <= 'Z')) {
-                while (rev[j] != '\0') {
-                    j++;
-                }
-                rev[j] = st[i];
-            }
-        }
-        
-        return new String(rev);
+        return new String(arr);
     }
 }
 ```
