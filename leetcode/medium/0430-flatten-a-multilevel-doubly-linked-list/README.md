@@ -93,8 +93,8 @@ Merging the serialization of each level and removing trailing nulls we obtain:
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 42.8 MB (beats 89.49%)  
-**Submitted:** 2026-11-17T11:03:43.398Z  
+**Memory:** 43.4 MB (beats 47.60%)  
+**Submitted:** 2026-11-17T11:28:07.156Z  
 
 ```java
 /*
